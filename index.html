@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ここにあなたの名前を入れてください -->
+    <title>〇〇のポートフォリオサイト</title>
+    <!-- スタイルシートは後で追加します -->
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* 基本的なフォント設定と余白 */
+        body {
+            font-family: 'Inter', sans-serif; /* Interフォント、または汎用的なサンセリフフォント */
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4; /* 背景色を少し明るく */
+            color: #333; /* 基本的な文字色 */
+        }
+        header, footer {
+            background-color: #333; /* ヘッダーとフッターの背景色 */
+            color: #fff; /* ヘッダーとフッターの文字色 */
+            padding: 1em 0;
+            text-align: center;
+        }
+        header h1, footer p {
+            margin: 0;
+        }
+        main {
+            padding: 20px;
+            max-width: 900px; /* メインコンテンツの最大幅 */
+            margin: 20px auto; /* 中央寄せ */
+            background-color: #fff; /* メインコンテンツの背景色 */
+            border-radius: 8px; /* 角を丸く */
+            box-shadow: 0 0 10px rgba(0,0,0,0.1); /* 軽い影 */
+        }
+        section {
+            margin-bottom: 30px; /* 各セクションの下に余白 */
+            padding: 20px;
+            border-bottom: 1px solid #eee; /* セクション間の区切り線 */
+        }
+        section:last-child {
+            border-bottom: none; /* 最後のセクションの区切り線はなし */
+        }
+        h2 {
+            color: #333; /* 見出しの色 */
+            border-bottom: 2px solid #007bff; /* 見出しの下線 */
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+        .work-item {
+            margin-bottom: 20px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px; /* 作品アイテムの角を丸く */
+        }
+        .work-item h3 {
+            margin-top: 0;
+        }
+        .work-item img, #profile img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 4px; /* 画像の角を丸く */
+            margin-bottom: 10px;
+        }
+        ul {
+            list-style: none; /* リストのデフォルトスタイルを削除 */
+            padding: 0;
+        }
+        ul li a {
+            text-decoration: none;
+            color: #007bff; /* リンクの色 */
+        }
+        ul li a:hover {
+            text-decoration: underline; /* ホバー時に下線 */
+        }
+        /* レスポンシブ対応 */
+        @media (max-width: 600px) {
+            main {
+                margin: 10px;
+                padding: 15px;
+            }
+            header h1 {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <header class="bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 text-white py-8 shadow-lg">
+        <div class="container mx-auto text-center">
+            <!-- あなたの名前に置き換えてください -->
+            <h1 class="text-4xl md:text-5xl font-bold tracking-tight">〇〇のポートフォリオサイト</h1>
+            <p class="mt-2 text-lg">✨Welcome to My Creative Space!✨</p>
+        </div>
+    </header>
+
+    <main class="container mx-auto mt-[-40px] mb-12">
+        <!-- ========== ヒーローセクション ========== -->
+        <section id="hero" class="bg-white rounded-xl shadow-2xl p-6 md:p-10 text-center transform hover:scale-105 transition-transform duration-300">
+            <h2 class="text-3xl font-bold text-pink-600 mb-4">🎉メインビジュアル🎉</h2>
+            <!-- 例: あなたのキャッチフレーズや肩書など -->
+            <p class="text-xl text-gray-700 mb-6">「世界を面白くするクリエイター」を目指して活動中！</p>
+            <!-- 画像を入れる場合は、以下のコメントを解除して src に画像パスを指定してください -->
+            <img src="https://placehold.co/800x400/f87171/ffffff?text=メイン画像+ここに配置" alt="メイン画像" class="w-full max-w-2xl mx-auto rounded-lg shadow-md mb-4">
+            <p class="text-sm text-gray-500">（ここにあなたの代表的な画像やイラストを配置しましょう）</p>
+        </section>
+
+        <!-- ========== プロフィールセクション ========== -->
+        <section id="profile" class="bg-white rounded-xl shadow-2xl p-6 md:p-10 mt-12 transform hover:scale-105 transition-transform duration-300">
+            <h2 class="text-3xl font-bold text-red-600 mb-6 text-center">🎀 自己紹介 🎀</h2>
+            <div class="md:flex md:items-center">
+                <div class="md:w-1/3 text-center mb-6 md:mb-0">
+                    <!-- プロフィール画像を入れる場合は、以下のコメントを解除して src に画像パスを指定してください -->
+                    <img src="https://placehold.co/300x300/fbbf24/ffffff?text=あなたの写真" alt="あなたの写真" class="w-48 h-48 md:w-64 md:h-64 mx-auto rounded-full shadow-lg border-4 border-yellow-400 object-cover">
+                </div>
+                <div class="md:w-2/3 md:pl-8">
+                    <p class="mb-3 text-lg"><strong class="text-yellow-700">名前：</strong> <!-- あなたの名前に置き換えてください --> 〇〇 △△</p>
+                    <p class="mb-3 text-lg"><strong class="text-yellow-700">所属：</strong> <!-- あなたの所属 (学校名・学部など) に置き換えてください --> 〇〇大学 〇〇学部</p>
+                    <p class="mb-3 text-lg"><strong class="text-yellow-700">スキル：</strong> <!-- あなたのスキルを記入してください (例: HTML, CSS, JavaScript, Python, 動画編集) --> HTML, CSS, JavaScript, 〇〇</p>
+                    <p class="mb-3 text-lg"><strong class="text-yellow-700">趣味：</strong> <!-- あなたの趣味を記入してください --> 〇〇、△△</p>
+                    <div class="mt-4 p-4 bg-yellow-100 rounded-lg">
+                        <h4 class="font-semibold text-yellow-800 mb-2">自己PRポイント：</h4>
+                        <!-- あなたの自己PRを記入してください -->
+                        <p class="text-gray-700">新しいことに挑戦するのが大好きです！フワちゃんのような見ていて楽しい、元気が出るような作品を作れるようになりたいです。特に〇〇の分野に力を入れており、△△のようなプロジェクトに貢献したいと考えています。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== 活動実績・作品セクション ========== -->
+        <section id="works" class="bg-white rounded-xl shadow-2xl p-6 md:p-10 mt-12 transform hover:scale-105 transition-transform duration-300">
+            <h2 class="text-3xl font-bold text-pink-600 mb-8 text-center">🚀 活動実績・作品 🚀</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- 作品アイテム1 -->
+                <article class="work-item bg-pink-50 p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <h3 class="text-2xl font-semibold text-pink-700 mb-3">作品タイトル1</h3>
+                    <!-- 作品の画像を入れる場合は、以下のコメントを解除して src に画像パスを指定してください -->
+                    <img src="https://placehold.co/600x400/fda4af/ffffff?text=作品1の画像" alt="作品1の画像" class="w-full h-48 object-cover rounded-md mb-4">
+                    <!-- 作品の説明を記入してください -->
+                    <p class="text-gray-700 mb-4">この作品は〇〇という課題で作成したもので、△△の技術を使って□□を表現しました。特にこだわった点は...</p>
+                    <!-- 作品へのリンクがある場合は、以下のコメントを解除して href にURLを指定してください -->
+                    <!-- <a href="#" target="_blank" class="text-pink-600 hover:text-pink-800 font-semibold">作品を見る &rarr;</a> -->
+                </article>
+
+                <!-- 作品アイテム2 -->
+                <article class="work-item bg-red-50 p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <h3 class="text-2xl font-semibold text-red-700 mb-3">作品タイトル2</h3>
+                    <img src="https://placehold.co/600x400/fca5a5/ffffff?text=作品2の画像" alt="作品2の画像" class="w-full h-48 object-cover rounded-md mb-4">
+                    <p class="text-gray-700 mb-4">〇〇コンテスト応募作品。△△をテーマに、□□のメッセージを込めて作成しました。工夫した点は...</p>
+                    <!-- <a href="#" target="_blank" class="text-red-600 hover:text-red-800 font-semibold">作品を見る &rarr;</a> -->
+                </article>
+
+                <!-- 作品アイテム3 (必要に応じて追加) -->
+                <article class="work-item bg-yellow-50 p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <h3 class="text-2xl font-semibold text-yellow-700 mb-3">作品タイトル3</h3>
+                    <img src="https://placehold.co/600x400/fcd34d/ffffff?text=作品3の画像" alt="作品3の画像" class="w-full h-48 object-cover rounded-md mb-4">
+                    <p class="text-gray-700 mb-4">授業のグループワークで開発した〇〇アプリです。私は主に△△の部分を担当しました。</p>
+                    <!-- <a href="#" target="_blank" class="text-yellow-600 hover:text-yellow-800 font-semibold">作品を見る &rarr;</a> -->
+                </article>
+                <!-- さらに作品アイテムを追加する場合は、上記 article タグのブロックをコピー＆ペーストしてください -->
+            </div>
+        </section>
+
+        <!-- ========== SNS・リンク セクション ========== -->
+        <section id="links" class="bg-white rounded-xl shadow-2xl p-6 md:p-10 mt-12 transform hover:scale-105 transition-transform duration-300">
+            <h2 class="text-3xl font-bold text-red-600 mb-6 text-center">🔗 SNS・リンク 🔗</h2>
+            <ul class="space-y-4 text-center">
+                <!-- 各SNSのリンク先URLを # に置き換えてください -->
+                <li><a href="#" target="_blank" class="text-lg text-blue-500 hover:text-blue-700 transition-colors duration-300 p-2 rounded-md hover:bg-blue-100 inline-block">X (旧Twitter) アカウント</a></li>
+                <li><a href="#" target="_blank" class="text-lg text-pink-500 hover:text-pink-700 transition-colors duration-300 p-2 rounded-md hover:bg-pink-100 inline-block">Instagram アカウント</a></li>
+                <li><a href="#" target="_blank" class="text-lg text-gray-700 hover:text-black transition-colors duration-300 p-2 rounded-md hover:bg-gray-200 inline-block">GitHub アカウント</a></li>
+                <li><a href="#" target="_blank" class="text-lg text-green-500 hover:text-green-700 transition-colors duration-300 p-2 rounded-md hover:bg-green-100 inline-block">ブログなど他のリンク</a></li>
+                <!-- 他にも公開したいリンクがあれば追加してください -->
+            </ul>
+        </section>
+
+        <!-- ========== お問い合わせセクション ========== -->
+        <section id="contact" class="bg-white rounded-xl shadow-2xl p-6 md:p-10 mt-12 transform hover:scale-105 transition-transform duration-300">
+            <h2 class="text-3xl font-bold text-yellow-600 mb-6 text-center">💌 お問い合わせ 💌</h2>
+            <p class="text-center text-lg text-gray-700">ご連絡は以下のメールアドレスまでお願いいたします。</p>
+            <!-- あなたのメールアドレスに置き換えてください -->
+            <p class="text-center text-xl font-semibold text-yellow-700 mt-4"><a href="mailto:your.email@example.com" class="hover:underline">your.email@example.com</a></p>
+            <!-- もしお問い合わせフォームを設置したい場合は、その旨お伝えください -->
+        </section>
+    </main>
+
+    <footer class="bg-gradient-to-r from-yellow-500 via-red-500 to-pink-500 text-white py-8 mt-12 text-center shadow-lg">
+        <div class="container mx-auto">
+            <!-- あなたの名前に置き換えてください -->
+            <p class="text-sm">&copy; 2025 〇〇. All rights reserved. Inspired by フワちゃん!</p>
+        </div>
+    </footer>
+
+</body>
+</html>
